@@ -1,3 +1,3 @@
-module gotechbook-framework-utils
+module github.com/gotechbook/gotechbook-framework-utils
 
 go 1.19
