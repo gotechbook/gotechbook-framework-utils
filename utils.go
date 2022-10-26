@@ -1,10 +1,17 @@
 package utils
 
 var (
-	IsFunction = isFunction
-	IsChan     = isChan
-	IsNil      = isNil
-	GetMapKeys = getMapKeys
+	IsFunction              = isFunction
+	IsChan                  = isChan
+	IsNil                   = isNil
+	GetMapKeys              = getMapKeys
+	ShouldAlwaysReturn      = shouldAlwaysReturn
+	ShouldEventuallyReceive = shouldEventuallyReceive
+	PollFuncReturn          = pollFuncReturn
+	VetExtras               = vetExtras
+	FixtureGoldenFileName   = fixtureGoldenFileName
+	WaitForServerToBeReady  = waitForServerToBeReady
+	StartProcess            = startProcess
 
 	IsCompressed = isCompressed
 	DeflateData  = deflateData
