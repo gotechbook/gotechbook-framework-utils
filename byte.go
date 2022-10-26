@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 )
 
-func DeflateData(data []byte) ([]byte, error) {
+func deflateData(data []byte) ([]byte, error) {
 	var bb bytes.Buffer
 	z := zlib.NewWriter(&bb)
 	_, err := z.Write(data)
@@ -17,7 +17,7 @@ func DeflateData(data []byte) ([]byte, error) {
 	return bb.Bytes(), nil
 }
 
-func InflateData(data []byte) ([]byte, error) {
+func inflateData(data []byte) ([]byte, error) {
 	zr, err := zlib.NewReader(bytes.NewBuffer(data))
 	if err != nil {
 		return nil, err
@@ -27,7 +27,7 @@ func InflateData(data []byte) ([]byte, error) {
 	return ioutil.ReadAll(zr)
 }
 
-func IsCompressed(data []byte) bool {
+func isCompressed(data []byte) bool {
 	return len(data) > 2 &&
 		(
 		// zlib
