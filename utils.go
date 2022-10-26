@@ -14,4 +14,7 @@ var (
 	ReadFile  = readFile
 
 	SliceContainsString = sliceContainsString
+
+	GetTestEtcd = getTestEtcd
+	GetFreePort = getFreePort
 )

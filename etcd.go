@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func GetTestEtcd(t *testing.T) (*integration.Cluster, *v3.Client) {
+func getTestEtcd(t *testing.T) (*integration.Cluster, *v3.Client) {
 	t.Helper()
 	integration.BeforeTest(t)
 	c := integration.NewCluster(t, &integration.ClusterConfig{Size: 1})

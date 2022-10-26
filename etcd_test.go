@@ -5,5 +5,5 @@ import (
 )
 
 func TestGetTestEtcd(t *testing.T) {
-	GetTestEtcd(t)
+	getTestEtcd(t)
 }
