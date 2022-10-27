@@ -6,6 +6,7 @@ var (
 	IsNil                   = isNil
 	GetMapKeys              = getMapKeys
 	ShouldAlwaysReturn      = shouldAlwaysReturn
+	ShouldEventuallyReturn  = shouldEventuallyReturn
 	ShouldEventuallyReceive = shouldEventuallyReceive
 	PollFuncReturn          = pollFuncReturn
 	VetExtras               = vetExtras
